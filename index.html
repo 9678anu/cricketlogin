@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRICKBET99 Login</title>
+  <title>Maruti Exchange Login</title>
   <style>
     body {
       margin: 0;
@@ -11,27 +11,38 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #4a2c0e, #1a1a1a, #808080);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a3c34, #0f1f1a);
+      font-family: 'Arial', sans-serif;
       overflow: hidden;
       cursor: pointer;
     }
     .container {
       text-align: center;
-      background: linear-gradient(135deg, #4a2c0e, #1a1a1a, #808080);
+      background: rgba(26, 60, 52, 0.9);
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       animation: fadeIn 1s ease-in-out;
       position: relative;
       z-index: 1;
-      width: 300px;
+      width: 500px;
       height: auto;
+      color: #fff;
+    }
+    .logo-container {
+      margin-bottom: 20px;
     }
     .logo {
-      max-width: 200px;
+      max-width: 250px;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+    .title {
+      font-size: 2.5em;
+      color: #ffd700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       margin-bottom: 20px;
+      font-weight: bold;
     }
     .form-group {
       margin-bottom: 20px;
@@ -47,14 +58,15 @@
     input {
       width: 100%;
       padding: 12px;
-      border: 2px solid #ddd;
+      border: 2px solid #ffd700;
       border-radius: 25px;
       font-size: 1em;
       transition: border-color 0.3s ease;
       background: #fff;
+      color: #1a3c34;
     }
     input:focus {
-      border-color: #ff6600;
+      border-color: #fff;
       outline: none;
     }
     button {
@@ -69,8 +81,8 @@
       transition: transform 0.2s ease;
     }
     .login-btn {
-      background: linear-gradient(90deg, #5c4033, #8b5a2b);
-      color: #fff;
+      background: linear-gradient(90deg, #ffd700, #ffa500);
+      color: #1a3c34;
     }
     .login-btn:hover {
       transform: scale(1.05);
@@ -85,7 +97,7 @@
     .separator {
       width: 100%;
       height: 1px;
-      background: #ccc;
+      background: #ffd700;
       margin: 20px 0;
     }
     .note {
@@ -104,7 +116,7 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(255, 204, 0, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+      background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
       animation: rotate 20s linear infinite;
       z-index: 0;
     }
@@ -117,7 +129,10 @@
 <body onclick="window.location.href='https://wa.me/1234567890'">
   <div class="bg-animation"></div>
   <div class="container">
-    <img src="https://cricbet99.com/assets/img/cricbet99/logo.png" alt="CRICKBET99 Logo" class="logo">
+    <div class="logo-container">
+      <img src="logo.jfif" alt="Maruti Exchange Logo" class="logo">
+      <div class="title">Maruti Exchange</div>
+    </div>
     <div class="form-group">
       <label>Username</label>
       <input type="text" placeholder="Enter Username">
@@ -130,8 +145,7 @@
     <div class="separator"></div>
     <button class="login-btn" onclick="event.stopPropagation(); window.location.href='https://wa.me/1234567890'">Login with Demo ID</button>
     <p class="note">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply</p>
- 
-  <button class="whatsapp-btn" onclick="event.stopPropagation(); window.location.href='https://wa.me/1234567890'" style="width: 300px;">Message Us on WhatsApp</button>
- </div>
+    <button class="whatsapp-btn" onclick="event.stopPropagation(); window.location.href='https://wa.me/1234567890'" style="width: 300px;">Message Us on WhatsApp</button>
+  </div>
 </body>
 </html>
